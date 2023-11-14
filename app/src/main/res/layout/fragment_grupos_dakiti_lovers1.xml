@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black"
+        tools:context=".GruposDakitiLovers1"
+        tools:ignore="ExtraText">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="337dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/group_9busqueda"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="241dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="10dp"
+            android:hint="Busqueda"
+            android:textColor="@color/white"
+            android:textColorHint="#808080"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btPersonas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#7B74F3"
+            android:shadowColor="#7B74F3"
+            android:text="Personas"
+            android:textColorHint="#7B77B3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <Button
+            android:id="@+id/btLugares"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="4dp"
+            android:backgroundTint="#7B74F3"
+            android:text="Lugares"
+            android:textColorHint="#7B74F3"
+            app:layout_constraintStart_toStartOf="@+id/btPersonas"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <Button
+            android:id="@+id/btGrupos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Grupos"
+            app:layout_constraintStart_toEndOf="@+id/btLugares"
+            app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="67dp"
+            android:text="- TODOS"
+            android:textColor="#656060"
+            android:textSize="30sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btLugares" />
+
+        <ImageView
+            android:id="@+id/DAKITILovers"
+            android:layout_width="315dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="56dp"
+            android:src="@drawable/group_30busqueda_grupos_transparente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView21" />
+
+        <ImageView
+            android:id="@+id/PaCangri"
+            android:layout_width="315dp"
+            android:layout_height="137dp"
+            android:layout_marginStart="24dp"
+            android:src="@drawable/group_30busqueda_grupos_transparente"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/DAKITILovers" />
+
+        />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="8:00pm"
+            android:textColor="#7B74F3"
+            app:layout_constraintStart_toStartOf="@+id/DAKITILovers"
+            app:layout_constraintTop_toTopOf="@+id/DAKITILovers" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="160dp"
+            android:text="10:00pm"
+            android:textColor="#7B74F3"
+            app:layout_constraintStart_toStartOf="@+id/DAKITILovers"
+            app:layout_constraintTop_toTopOf="@+id/DAKITILovers" />
+
+        />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="42dp"
+            android:text="DAKITILovers"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/DAKITILovers"
+            app:layout_constraintTop_toTopOf="@+id/DAKITILovers" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="40dp"
+            android:text="PaCangri"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/PaCangri"
+            app:layout_constraintTop_toTopOf="@+id/PaCangri" />
+
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="282dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="59dp"
+            android:text="Formemos un grupo para encontrarnos, he ir a cangri a disfrutar."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/PaCangri"
+            app:layout_constraintTop_toTopOf="@+id/PaCangri" />
+
+        <TextView
+            android:id="@+id/textView57"
+            android:layout_width="282dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="60dp"
+            android:text="Formemos un grupo para encontrarnos, he ir a dakiti a disfrutar."
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="@+id/DAKITILovers"
+            app:layout_constraintTop_toTopOf="@+id/DAKITILovers" />
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="434dp"
+            android:layout_height="436dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="-15dp"
+            android:src="@drawable/group_5tg_dialogo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PaCangri" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="335dp"
+            android:layout_height="187dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginBottom="192dp"
+            android:src="@drawable/group_34grupos_mapa"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/back_to_the_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="360dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/baseline_back"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+        <ImageView
+            android:id="@+id/unirse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="112dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/group_35unirse"
+            app:layout_constraintStart_toStartOf="@+id/imageView24"
+            app:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+        <ImageView
+            android:id="@+id/Cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="260dp"
+            android:src="@drawable/group_33cancelar"
+            app:layout_constraintStart_toEndOf="@+id/unirse"
+            app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+

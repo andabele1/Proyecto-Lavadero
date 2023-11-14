@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/white"
+    >
+
+    <item
+        android:id="@+id/map"
+        android:icon="@drawable/baseline_map_24"
+        android:color="@color/white"
+        android:title="Map" />
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:color="@color/white"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/baseline_search_24"
+        android:color="@color/white"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/baseline_profile_24"
+        android:color="@color/white"
+        android:title="Profile" />
+
+</menu>

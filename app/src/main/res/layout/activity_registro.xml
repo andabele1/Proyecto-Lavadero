@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegistroActivity"
+    android:background="#000000">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/CrearCuenta"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="100dp"
+                android:minHeight="48dp"
+                android:text="Crear Cuenta"
+                android:textColor="@color/white"
+                android:textSize="35sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txNombre"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Nombre"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/CrearCuenta" />
+
+            <EditText
+                android:id="@+id/txApellido"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Apellido"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txNombre" />
+
+            <EditText
+                android:id="@+id/FechaDeNacimiento"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Fecha de nacimiento"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txApellido" />
+
+            <EditText
+                android:id="@+id/Usuario"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Usuario"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/FechaDeNacimiento" />
+
+            <EditText
+                android:id="@+id/Correo"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Correo"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Usuario" />
+
+            <EditText
+                android:id="@+id/Contraseña"
+                android:layout_width="342dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_edit"
+                android:hint="Contraseña"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="#808080"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Correo" />
+
+
+            <TextView
+                android:id="@+id/Genero"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="20dp"
+                android:hint="Genero"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+
+                android:textColorHint="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Contraseña" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="1dp"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Genero">
+
+                <RadioButton
+                    android:id="@+id/Femenino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Femenino"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/Masculino"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Masculino"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF" />
+
+                <RadioButton
+                    android:id="@+id/NoDecirlo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="20dp"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="Prefiero no decirlo"
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFFFF" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/RegisContinuar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button"
+                android:text="Continuar"
+                android:layout_marginStart="70sp"
+                android:layout_marginEnd="70dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

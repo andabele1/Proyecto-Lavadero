@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/black">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".ui.notifications.NotificationsFragment">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="337dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/group_9busqueda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="241dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="10dp"
+        android:hint="Busqueda"
+        android:textColor="@color/white"
+        android:textColorHint="#808080"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btPersonas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="5dp"
+        android:shadowColor="#FFFFFF"
+        android:text="Personas"
+        android:textColorHint="@color/purple_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btLugares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/purple_blue"
+        android:text="Lugares"
+        android:textColorHint="@color/purple_blue"
+        app:layout_constraintStart_toStartOf="@+id/btPersonas"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/btGrupos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="@color/purple_blue"
+        android:text="Grupos"
+        app:layout_constraintStart_toEndOf="@+id/btLugares"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="67dp"
+        android:text="- TODOS"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btLugares" />
+
+    <ImageView
+        android:id="@+id/Perfil_Henry"
+        android:layout_width="329dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/group_22personas1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <ImageView
+        android:id="@+id/Perfil_Juan"
+        android:layout_width="329dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/group_23perosnas2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Perfil_Henry" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="329dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/group_24personas3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Perfil_Juan" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="329dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/group_25personas4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-90dp"
+        android:text="Voy a ir a pasaje, quien quiere ir?"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Perfil_Henry"
+        app:layout_constraintTop_toBottomOf="@+id/Perfil_Henry" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="204dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-90dp"
+        android:text="Quien para formar un grupo y formar salidas y eso."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/Perfil_Juan"
+        app:layout_constraintTop_toBottomOf="@+id/Perfil_Juan" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-90dp"
+        android:text="Voy para cangri."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/imageView15"
+        app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="-90dp"
+        android:text="Voy para dakiti."
+        app:layout_constraintStart_toStartOf="@+id/imageView17"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
